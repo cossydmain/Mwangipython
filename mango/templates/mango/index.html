@@ -5,7 +5,7 @@
         {% if profiles %}
            {% for prof in profiles  %}
               <div class="col-sm-3">
-                  <div class="card card-body my-1" style="background-color: {% if prof.is_male %}orange; {% else %}pink; {% endif %}">
+                  <div class="card card-body my-1" style="background-color: {% if prof.is_male %}darkgrey; {% else %}pink; {% endif %}">
                       <h4 class="text-center"
                       style="white-space: nowrap;
                       overflow: hidden;
@@ -18,7 +18,7 @@
                           <h6 class="text-center"
                            style="white-space: nowrap;
                            overflow: hidden;
-                           text-overflow: ellipsis;max-width:90%; font-family:Gugi; " >{{prof.slogan}}</h6>
+                           text-overflow: ellipsis;max-width:90%; font-family:Akronim; " >{{prof.slogan}}</h6>
                           <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-{{prof.id}}">
                               <i class="fas fa-info"></i>
                           </button>
@@ -35,7 +35,7 @@
                               </div>
                               <div class="modal-body">
                                   <p style="font-family:Sofia;">
-                                     {{prof.name}} is a {{prof.nationality}} and an {{prof.occupation}} expert. He/She is a {{prof.course}} student at {{prof.campus}} and also loves loves {{prof.hobby}}.He/She is {{prof.age}} years old
+                                     {{prof.name}} is a {{prof.nationality}} and an {{prof.occupation}} expert. He/She is a {{prof.course}} student at {{prof.campus}} University and also loves {{prof.hobby}}.He/She is {{prof.age}} years old
                                      Lives at {{prof.residence}} and you can reach her via <a href="mailto:{{prof.email}}." >{{prof.email}}</a>
                                   </p>
                               </div>
